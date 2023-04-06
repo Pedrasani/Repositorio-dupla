@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" rel="preload" href="./assets/css/styles.css">
+    <script src="./assets/js/loader.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+
+</head>
+<body>
+    <div class="loader">
+        <div class="spin"></div>
+    </div>
+    <main class="hiden">
+
+
+
+    
+    <nav >
+        <div id="hamburguer">
+            <div class="linha" id="linha1"></div>
+            <div class="linha" id="linha2"></div>
+            <div class="linha" id="linha3"></div>
+        </div>
+        <ul>
+            <li><a href="#home">
+                <i class="fa-solid fa-house"></i>
+                Inicio</a></li>
+            <li><a href="#secao-apresentacao">
+                <i class="fa-regular fa-newspaper"></i>
+                Noticias</a></li>
+            <li><a href="#secao-projetos">
+                <i class="fa-solid fa-futbol"></i>
+                Saiba mais</a></li>
+            <li><a href="#secao-orcamento">
+                <i class="fa-solid fa-money-bill"></i>
+                Planos de assinatura</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <h1>J & P</h1>
+        <h1>Estatísticas Esportivas</h1>
+        <span class="only-large">As melhores notícias você encontra aqui!</span>
+        <a href="#secao-apresentacao" class="botao">Ver noticias</a>
+    </header>
+
+    <section id="secao-apresentacao">
+        <img id="avatar" class="only-large" src="./assets/images/criciumaavai.jpg" alt="foto de uma bola">
+        <div>
+            <h2>
+                Criciúma x Avaí: No total, foram 30 cobranças de pênalti na partida!
+            </h2>
+            <p>Tricolor leva a melhor sobre o Leão da Ilha e avança no Campeonato Catarinense</p>
+            <p>O Criciúma eliminou o Avaí e está nas semifinais do Campeonato Catarinense. Após o empate sem gols nos jogos de ida e volta, a equipe do Sul de Santa Catarina levou a melhor nas cobranças de pênalti e comemorou com a torcida no Estádio Heriberto Hülse. Foram 30 cobranças na noite da última terça-feira.</p>
+            <a href="#" class="botao">veja mais</a>
+        </div>
+    </section>
+
+    <section id="secao-projetos">
+        <ul>
+            <li>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                      <img src="./assets/images/ituano.jpg" alt="imagem do projeto " />
+                    </div>
+                    <div class="card-text">
+                        <h2>Brasil</h2>
+                        <h3>Ituano</h3>
+                        <p>Raí Ramos, está bem perto de fechar com o São Paulo </p>
+                        <a href="#" class="botao">confira</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                      <img src="./assets/images/real.PNG" alt="imagem do real" />
+                    </div>
+                    <div class="card-text">
+                        <h2>Mundo</h2>
+                        <h3>Real Madrid</h3>
+                        <p>Com a indecisão sobre o futuro de Carlo Ancelotti, o Real Madrid começa a sondar treinadores e, de acordo com o jornal “Marca”, José Mourinho não é uma das opções... </p>
+                        <a href="#" class="botao"> saiba mais</a>
+                    </div>
+            </li>
+            <li>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                      <img src="./assets/images/boladefut.PNG" alt="imagem de uma bola " />
+                    </div>
+                    <div class="card-text">
+                        <h2>Brasil</h2>
+                        <h3>Top 1</h3>
+                        <p>O Brasil ocupa o primeiro lugar no mundo entre os países com mais jogos suspeitos de manipulação de resultados em 2022.!</p>
+                        <a href="#" class="botao">mais detalhes</a>
+                    </div>
+            </li>
+            <li>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                      <img src="./assets/images/pal.PNG" alt="imagem de uma bola " />
+                    </div>
+                    <div class="card-text">
+                        <h2>Brasil</h2>
+                        <h3>Palmeiras</h3>
+                        <p>Palmeiras agiliza o processo de documentação com o Bragantino e pretende anunciar a contratação de Artur até sexta-feira, 31; entenda o motivo da “pressa” palmeirense</p>
+                        <a href="#" class="botao">mais detalhes</a>
+                    </div>
+            </li>
+            
+        </ul>
+    </section>
+
+    <secao id="secao-orcamento">
+        <form action="#">
+            <h3>Você deseja assinar nosso plano premium?</h3>
+            <label for="qtde">Quantas pessoas você quer adicionar no plano: </label>
+            <input type="number" id="qtde" min="1" value="1">
+            <label for="js">Plano Black Premium? (acesso total)</label>
+            <input type="checkbox" id="js">
+            <label for="layout">Deseja receber notícias em tempo real?</label>
+            <div>
+                <input type="radio" id="layout_sim" name="layout">
+                <label for="">sim, quero receber todas as informações</label>
+                <input type="radio" id="layout_nao" name="layout">
+                <label for="">não, quero só o plano básico</label>
+            </div>
+            <label for="prazo">Tempo de assinatura em semanas</label>
+            <input type="range" id="prazo">
+            <output>R$ 0,00</output>
+            
+        </form>
+    </secao>
+</main>
+</body>
+<script src="./assets/js/script.js"></script>
+<script src="./assets/js/menu.js"></script>
+</html>
